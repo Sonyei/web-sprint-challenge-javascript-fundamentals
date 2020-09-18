@@ -1,0 +1,21 @@
+1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+.forEach essentially replaces a for loop, provided there are no conditionals. It's used to iterate through an array, does not return a new array, and does not need a return statement. .map is used to convert data, and conversely does return a new array and does need a return statement.
+
+2. Explain the difference between a callback and a higher order function.
+A callback is a function meant to be used multiple times throughout the code and is passed into a higher order function. A higher order function is the framework for utilizing callbacks and thus receives callbacks to use.
+
+3. What is closure?
+Closure is what allows functions to work together, through lexical scoping and the internal environment of a function. This is how data is being passed and stored to be used elsewhere in the code for later use, and why var, let, and const labels can be recycled throughout the code without being jumbled -- depending on what their scope is and where closure happened.
+
+4. Describe the four rules of the 'this' keyword.
+
+Window binding: when 'this' binds to the window, or global object, because 'this' hasn't been given context. In strict mode, 'this' will return undefined rather than binding to the window object.
+
+Implicit binding: On ojbects that have methods and invoked, 'this' refers to whatever is left of the dot.
+
+Explicit binding: Contrary to all others, explicit is when the developer assigns 'this' manually via keywords: .call, .apply, and .bind. .call is an IIFE and passes in arguments 1-by-1. .apply is also an IIFE and passes in arguments as an array. Finally, .bind is NOT an IIFE and returns a new function that can be later invoked.
+
+New binding: 'this' refers to the newly created object that is made when using the new keyword.
+
+5. Why do we need super() in an extended class?
+Super takes care of binding child to parent; without it the extends keyword wouldn't have meaning and we'd all be stuck with prototypes.
