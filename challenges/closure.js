@@ -17,7 +17,7 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
-// nestedFunction can access the variable internal becaused nestedFunction is inside of myFunction. Closure and scoping allows nestedFunction to reach outwards ( in this case myFunction) and grab whatever information it needs from the parent function.
+// nestedFunction can access the variable internal becaused nestedFunction is inside of myFunction, and internal is declared inside of myFunction. Closure and scoping allows nestedFunction to reach outwards ( in this case myFunction) and grab whatever information it needs from the parent function/container/document.
 
  /* Task 2: Counter */
 
